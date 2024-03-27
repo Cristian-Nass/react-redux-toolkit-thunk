@@ -4,7 +4,7 @@ import Product from "../../components/Product";
 const ProductsList = () => {
   const products = useSelector((store) => store.products.productsData);
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="wrapper">
       {products.map((item) => (
         <Product
           key={item.id}
